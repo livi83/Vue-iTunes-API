@@ -1,0 +1,90 @@
+@import '_variables.scss';
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,800');
+* {
+
+   box-sizing: border-box;
+}
+body {
+	font-size: 16px;
+	color: $color;
+	background-color: #09f;
+}
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#app {
+	font: {
+		size: 1em;
+		family: 'Nunito Sans', helvetica, arial, sans-serif;
+		weight: 600;
+	}
+
+	text-align: center;
+	margin: 0em auto 2em;
+	max-width: 48em;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	color: #fffa0d;
+}
+
+h1 {
+	font: {
+		size: 2.25em;
+		weight: 800;
+		style: normal;
+	}
+
+	text-align: center;
+	letter-spacing: -1px;
+}
+
+h1:first-child {
+	margin-top: 0;
+}
+
+header {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	margin-bottom: 1em;
+}
+
+.content {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+	font-size: 1.15em;
+	line-height: 1.5em;
+	padding: 1.5em 1.75em;
+}
+
+article {
+	text-align: left;
+	display:inline-block;
+}
+p,h1,h2,h3{
+	color:#fff;
+}
+
+//animations
+[v-cloak]{
+	display:none;
+}
+// css
+.fade-enter-active {
+    transition: all 0.2s ease;
+}
+
+.fade-enter {
+    transform: scale(0.9);
+}
+
+@media screen and (max-width: 520px) {
+	#app {
+		font-size: 0.85em;
+	}
+}
