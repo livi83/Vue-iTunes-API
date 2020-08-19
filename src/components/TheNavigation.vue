@@ -1,8 +1,6 @@
 <template>
 	<div class="navigation">
-		<router-link to="/">Home</router-link>
-		<router-link to="/tunes">🎶Me</router-link>
-		<router-link to="/about">About</router-link>
+		<router-link to="/">My iTunes App</router-link>
 	</div>
 </template>
 
